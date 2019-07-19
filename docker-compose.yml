@@ -1,0 +1,17 @@
+version: "3"
+
+services:
+
+  jikan-rest:
+    build:
+      context: jikan
+      dockerfile: Dockerfile
+    depends_on:
+      - jikan-redis
+    ports:
+      - "9001:80"
+    restart: always
+
+  jikan-redis:
+    image: redis:5.0.3
+    restart: always
