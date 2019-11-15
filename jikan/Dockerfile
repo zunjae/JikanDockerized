@@ -1,4 +1,4 @@
-FROM php:7.3.2-apache-stretch
+FROM php:7.3.11-apache-buster
 
 ENV COMPOSER_ALLOW_SUPERUSER 1
 
