@@ -9,10 +9,10 @@ $ docker-compose up -d
 
 ## Usage
 
-Access the API (v3) `port 9001`:
+Access the API (v3) `port 9000`:
 
 ```
-http://localhost:9001/public/v3
+http://localhost:9000/public/v3
 ```
 
 ## More info
