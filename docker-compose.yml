@@ -2,20 +2,18 @@ version: "3.4"
 
 services:
 
-  jikan-rest:
+  jikan-rest-api:
     build:
       context: jikan
       dockerfile: Dockerfile
     depends_on:
-      - jikan-redis
+      - jikan-redis-db
     ports:
       - "9001:80"
     networks:
       - default
     restart: always
-    container_name: jikan-rest-api
 
-  jikan-redis:
-    image: redis:5.0.6-buster
+  jikan-redis-db:
+    image: redis
     restart: always
-    container_name: jikan-rest-redis
