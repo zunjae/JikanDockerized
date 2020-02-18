@@ -2,12 +2,9 @@ Based off https://github.com/tzw0745/jikan-rest-docker
 
 ## Installation
 
-If you don't have Docker installed, install that first (checkout my install-docker.sh script)
-
-Then:
-
 ```bash
-$ bash run.sh
+$ docker-compose build
+$ docker-compose up -d
 ```
 
 ## Usage
