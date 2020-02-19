@@ -14,7 +14,6 @@ RUN apt-get update && apt-get install -y \
  && composer install --prefer-dist --no-progress --no-suggest --classmap-authoritative  --no-interaction \
  && composer update jikan-me/jikan
 
-
 ADD .env /run-jikan.sh ./
 
 ENTRYPOINT ["./run-jikan.sh"]
