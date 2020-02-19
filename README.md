@@ -2,7 +2,9 @@ Based off https://github.com/tzw0745/jikan-rest-docker
 
 ## Installation
 
-// TODO:
+```bash
+bash run.sh
+```
 
 ## Usage
 
