@@ -2,7 +2,7 @@ version: "3.4"
 
 services:
 
-  jikan-rest:
+  jikan-rest-api:
     build:
       context: jikan
       dockerfile: Dockerfile
@@ -15,9 +15,5 @@ services:
     restart: always
 
   jikan-redis:
-    image: redis:rc-alpine
-    ports:
-      - "6379:6379"
-    networks:
-      - default
+    image: redis
     restart: always
