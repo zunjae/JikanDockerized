@@ -3,8 +3,7 @@ Based off https://github.com/tzw0745/jikan-rest-docker
 ## Installation
 
 ```bash
-$ docker-compose build
-$ docker-compose up -d
+$ bash run.sh
 ```
 
 ## Usage
