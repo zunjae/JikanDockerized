@@ -9,7 +9,7 @@ services:
     depends_on:
       - jikan-redis
     ports:
-      - "9001:80"
+      - "9001:8000"
     networks:
       - default
     restart: always
